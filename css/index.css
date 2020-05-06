@@ -34,23 +34,68 @@ body {
 }
 
 .google-search-container {
-  display: flex;
-  justify-content: center;
+  width: 600px;
+  margin: 10px auto 0;
+}
+
+.google-search-container .fa {
+  color: #d5d5d5;
+}
+
+.google-search-bar {
   border: 1px solid #d5d5d5;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 20px;
   color: #d5d5d5;
+  margin-top: 20px;
 }
 
-
-.google-search-container input {
-  border-radius: 20px;
+.google-search-bar input {
   border: none;
-
-  width: 500px;
-  height: 30px;
-
+  width: 92%;
   margin-left: 4px;
   font-size: 110%;
+}
+
+.google-search-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.google-search-buttons .search-button {
+  margin-right: 10px;
+}
+
+.google-search-buttons button {
+  padding: 11px;
+  border-radius: 5px;
+  border: 0 solid #d5d5d5;
+  margin-top: 20px;
+}
+
+.google-search-buttons button:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/*footer {*/
+/*  display: flex;*/
+/*  justify-content: center*/
+/*;*/
+/*}*/
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  padding: 20px;
+  flex-shrink: 0;
 }
