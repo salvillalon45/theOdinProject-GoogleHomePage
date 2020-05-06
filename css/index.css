@@ -1,0 +1,56 @@
+/* Overall */
+/* --------------------------------------- */
+/* Change the font of the website */
+body {
+  font-family: 'Sen', sans-serif;
+  /*background-color: #f0f0f0;*/
+}
+
+.google-nav {
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: -40px;
+}
+
+.user-nav {
+  list-style-type: none;
+  margin-top: -19px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.google-nav-link, .user-nav-link {
+  margin-left: 10px;
+}
+
+.google-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.user-nav .fa {
+  font-size: 20px;
+}
+
+.google-search-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #d5d5d5;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  color: #d5d5d5;
+}
+
+
+.google-search-container input {
+  border-radius: 20px;
+  border: none;
+
+  width: 500px;
+  height: 30px;
+
+  margin-left: 4px;
+  font-size: 110%;
+}
