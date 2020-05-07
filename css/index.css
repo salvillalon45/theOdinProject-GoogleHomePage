@@ -1,11 +1,5 @@
-/* Overall */
+/* Top Navigation */
 /* --------------------------------------- */
-/* Change the font of the website */
-body {
-  font-family: 'Sen', sans-serif;
-  /*background-color: #f0f0f0;*/
-}
-
 .google-nav {
   list-style-type: none;
   display: inline-flex;
@@ -20,17 +14,25 @@ body {
 }
 
 .google-nav-link, .user-nav-link {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
+.user-nav .fa-th {
+  font-size: 20px;
+}
+
+.fa-user-circle-o {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-right: 20px;
+}
+
+/* Middle container that has the Google logo, search bar, search buttons */
+/* --------------------------------------- */
 .google-logo-container {
   display: flex;
   justify-content: center;
   margin-top: 70px;
-}
-
-.user-nav .fa {
-  font-size: 20px;
 }
 
 .google-search-container {
@@ -79,13 +81,28 @@ body {
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-/*footer {*/
-/*  display: flex;*/
-/*  justify-content: center*/
-/*;*/
-/*}*/
+/* Footer */
+/* --------------------------------------- */
+/*
+  Why use margin:0
+
+  https://teamtreehouse.com/community/-margin-0-padding-0-what-is-the-exact-meaning-of-this
+
+  The main reason this is used is because sometimes the browser will apply
+  it's default margin/padding to elements, and in a case where you do
+  not want there to be any margin or padding space around an element you will
+  want to define that there is no margin or padding.
+
+  Resets the pages default margin and padding for the entire html file.
+  This will allow you to have more control when you are styling specific elements.
+
+ */
+
+/* To create a sticky footer */
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -94,8 +111,41 @@ body {
 }
 main {
   flex: 1 0 auto;
+  margin-top: auto
 }
-footer {
-  padding: 20px;
+
+.footer {
   flex-shrink: 0;
+  background: #f2f2f2;
+}
+
+/* Footer styling */
+.footer-nav-left {
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: -40px;
+}
+
+.footer-nav-right {
+  list-style-type: none;
+  margin-top: -19px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px
+}
+
+.footer-nav-link-right, .footer-nav-link-left {
+  margin-left: 20px;
+}
+
+/* link tags */
+/* --------------------------------------- */
+a {
+  color: rgba(0,0,0,0.87);
+  text-decoration: none;
+  font-family: arial, sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
 }
